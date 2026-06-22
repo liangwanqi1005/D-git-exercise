@@ -1,9 +1,9 @@
-const int ledPin = 2;
-// 时间定义
-const unsigned long dotTime = 400;    // 短亮200ms
-const unsigned long dashTime = 800;   // 长亮600ms
-const unsigned long gapTime = 200;    // 字符间隔
-const unsigned long sosEndPause = 2000;// 一轮SOS结束停顿
+const int ledPin = 2;                 // ESP32板载LED引脚GPIO2
+// SOS灯光时间参数定义
+const unsigned long dotTime = 400;    // 短闪光时长
+const unsigned long dashTime = 800;   // 长闪光时长
+const unsigned long gapTime = 100;    // 单次闪烁熄灭间隔
+const unsigned long sosEndPause = 2000;// 完整一轮SOS后的长停顿
 
 unsigned long nowT;
 unsigned long lastT;
