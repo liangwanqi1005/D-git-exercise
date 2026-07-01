@@ -16,6 +16,7 @@ void loop() {
     ledcWrite(LED_B, 255 - bright);
     delay(8); // 延时统一，过渡柔和不急促
   }
+  
   // 同步渐变：A渐暗，B同步渐亮
   for(int bright = 255; bright >= 0; bright--){
     ledcWrite(LED_A, bright);
