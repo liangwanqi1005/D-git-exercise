@@ -50,6 +50,7 @@ void loop() {
     ledcWrite(LED_PIN, i);
     delay(10);
   }
+  
   // 呼吸灯渐暗
   for (int i = 255; i >= 0; i = i - step)
   {
